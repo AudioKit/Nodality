@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A6E84A379C92DC59024E713 /* Pods_Nodality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E055D9C2CFB69958EE43A802 /* Pods_Nodality.framework */; };
+		C48FCEC0211D78B7000D7717 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCEBF211D78B7000D7717 /* AppDelegate.swift */; };
+		C48FCEC2211D78B7000D7717 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCEC1211D78B7000D7717 /* ViewController.swift */; };
+		C48FCEC5211D78B7000D7717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48FCEC3211D78B7000D7717 /* Main.storyboard */; };
+		C48FCEC7211D78B9000D7717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48FCEC6211D78B9000D7717 /* Assets.xcassets */; };
+		C48FCECA211D78B9000D7717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48FCEC8211D78B9000D7717 /* LaunchScreen.storyboard */; };
+		C48FCEE7211D795E000D7717 /* NodeSelectorModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCED2211D795E000D7717 /* NodeSelectorModal.swift */; };
+		C48FCEE8211D795E000D7717 /* SliderWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCED3211D795E000D7717 /* SliderWidget.swift */; };
+		C48FCEE9211D795E000D7717 /* mixloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = C48FCED5211D795E000D7717 /* mixloop.wav */; };
+		C48FCEEA211D795E000D7717 /* leadloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = C48FCED6211D795E000D7717 /* leadloop.wav */; };
+		C48FCEEB211D795E000D7717 /* bassloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = C48FCED7211D795E000D7717 /* bassloop.wav */; };
+		C48FCEEC211D795E000D7717 /* drumloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = C48FCED8211D795E000D7717 /* drumloop.wav */; };
+		C48FCEED211D795E000D7717 /* guitarloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = C48FCED9211D795E000D7717 /* guitarloop.wav */; };
+		C48FCEEE211D795E000D7717 /* SNNodesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCEDB211D795E000D7717 /* SNNodesContainer.swift */; };
+		C48FCEEF211D795E000D7717 /* SNRelationshipCurvesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCEDC211D795E000D7717 /* SNRelationshipCurvesLayer.swift */; };
+		C48FCEF0211D795E000D7717 /* ShinpuruNodeDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCEDD211D795E000D7717 /* ShinpuruNodeDataTypes.swift */; };
+		C48FCEF1211D795E000D7717 /* SNNodeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCEDE211D795E000D7717 /* SNNodeWidget.swift */; };
+		C48FCEF2211D795E000D7717 /* SNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCEDF211D795E000D7717 /* SNView.swift */; };
+		C48FCEF3211D795E000D7717 /* InputOutputRenderers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCEE1211D795E000D7717 /* InputOutputRenderers.swift */; };
+		C48FCEF4211D795E000D7717 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCEE2211D795E000D7717 /* Model.swift */; };
+		C48FCEF5211D795E000D7717 /* NodeVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCEE3211D795E000D7717 /* NodeVO.swift */; };
+		C48FCEF6211D795E000D7717 /* ItemRenderers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCEE4211D795E000D7717 /* ItemRenderers.swift */; };
+		C48FCEF7211D795E000D7717 /* NodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCEE5211D795E000D7717 /* NodeType.swift */; };
+		C48FCEF8211D795E000D7717 /* NodeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FCEE6211D795E000D7717 /* NodeValue.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00B17782487508EDCF17F630 /* Pods-Nodality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nodality.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nodality/Pods-Nodality.debug.xcconfig"; sourceTree = "<group>"; };
+		BAD49F1279D71D7037201064 /* Pods-Nodality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nodality.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nodality/Pods-Nodality.release.xcconfig"; sourceTree = "<group>"; };
+		C48FCEBC211D78B7000D7717 /* Nodality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nodality.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C48FCEBF211D78B7000D7717 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C48FCEC1211D78B7000D7717 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C48FCEC4211D78B7000D7717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C48FCEC6211D78B9000D7717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C48FCEC9211D78B9000D7717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C48FCECB211D78B9000D7717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48FCED2211D795E000D7717 /* NodeSelectorModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeSelectorModal.swift; sourceTree = "<group>"; };
+		C48FCED3211D795E000D7717 /* SliderWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderWidget.swift; sourceTree = "<group>"; };
+		C48FCED5211D795E000D7717 /* mixloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mixloop.wav; sourceTree = "<group>"; };
+		C48FCED6211D795E000D7717 /* leadloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = leadloop.wav; sourceTree = "<group>"; };
+		C48FCED7211D795E000D7717 /* bassloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bassloop.wav; sourceTree = "<group>"; };
+		C48FCED8211D795E000D7717 /* drumloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drumloop.wav; sourceTree = "<group>"; };
+		C48FCED9211D795E000D7717 /* guitarloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitarloop.wav; sourceTree = "<group>"; };
+		C48FCEDB211D795E000D7717 /* SNNodesContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNNodesContainer.swift; sourceTree = "<group>"; };
+		C48FCEDC211D795E000D7717 /* SNRelationshipCurvesLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNRelationshipCurvesLayer.swift; sourceTree = "<group>"; };
+		C48FCEDD211D795E000D7717 /* ShinpuruNodeDataTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShinpuruNodeDataTypes.swift; sourceTree = "<group>"; };
+		C48FCEDE211D795E000D7717 /* SNNodeWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNNodeWidget.swift; sourceTree = "<group>"; };
+		C48FCEDF211D795E000D7717 /* SNView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNView.swift; sourceTree = "<group>"; };
+		C48FCEE1211D795E000D7717 /* InputOutputRenderers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputOutputRenderers.swift; sourceTree = "<group>"; };
+		C48FCEE2211D795E000D7717 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C48FCEE3211D795E000D7717 /* NodeVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeVO.swift; sourceTree = "<group>"; };
+		C48FCEE4211D795E000D7717 /* ItemRenderers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRenderers.swift; sourceTree = "<group>"; };
+		C48FCEE5211D795E000D7717 /* NodeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeType.swift; sourceTree = "<group>"; };
+		C48FCEE6211D795E000D7717 /* NodeValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeValue.swift; sourceTree = "<group>"; };
+		E055D9C2CFB69958EE43A802 /* Pods_Nodality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nodality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C48FCEB9211D78B7000D7717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A6E84A379C92DC59024E713 /* Pods_Nodality.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		166F3B82011B57102FE03D66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E055D9C2CFB69958EE43A802 /* Pods_Nodality.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EEFF92DE798669D65137B36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00B17782487508EDCF17F630 /* Pods-Nodality.debug.xcconfig */,
+				BAD49F1279D71D7037201064 /* Pods-Nodality.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C48FCEB3211D78B7000D7717 = {
+			isa = PBXGroup;
+			children = (
+				C48FCEBE211D78B7000D7717 /* Nodality */,
+				C48FCEBD211D78B7000D7717 /* Products */,
+				5EEFF92DE798669D65137B36 /* Pods */,
+				166F3B82011B57102FE03D66 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C48FCEBD211D78B7000D7717 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C48FCEBC211D78B7000D7717 /* Nodality.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C48FCEBE211D78B7000D7717 /* Nodality */ = {
+			isa = PBXGroup;
+			children = (
+				C48FCEBF211D78B7000D7717 /* AppDelegate.swift */,
+				C48FCEC1211D78B7000D7717 /* ViewController.swift */,
+				C48FCED1211D795E000D7717 /* components */,
+				C48FCEE0211D795E000D7717 /* demoProject */,
+				C48FCED4211D795E000D7717 /* loops */,
+				C48FCEDA211D795E000D7717 /* shinpuru */,
+				C48FCEC3211D78B7000D7717 /* Main.storyboard */,
+				C48FCEC6211D78B9000D7717 /* Assets.xcassets */,
+				C48FCEC8211D78B9000D7717 /* LaunchScreen.storyboard */,
+				C48FCECB211D78B9000D7717 /* Info.plist */,
+			);
+			path = Nodality;
+			sourceTree = "<group>";
+		};
+		C48FCED1211D795E000D7717 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				C48FCED2211D795E000D7717 /* NodeSelectorModal.swift */,
+				C48FCED3211D795E000D7717 /* SliderWidget.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		C48FCED4211D795E000D7717 /* loops */ = {
+			isa = PBXGroup;
+			children = (
+				C48FCED5211D795E000D7717 /* mixloop.wav */,
+				C48FCED6211D795E000D7717 /* leadloop.wav */,
+				C48FCED7211D795E000D7717 /* bassloop.wav */,
+				C48FCED8211D795E000D7717 /* drumloop.wav */,
+				C48FCED9211D795E000D7717 /* guitarloop.wav */,
+			);
+			path = loops;
+			sourceTree = "<group>";
+		};
+		C48FCEDA211D795E000D7717 /* shinpuru */ = {
+			isa = PBXGroup;
+			children = (
+				C48FCEDB211D795E000D7717 /* SNNodesContainer.swift */,
+				C48FCEDC211D795E000D7717 /* SNRelationshipCurvesLayer.swift */,
+				C48FCEDD211D795E000D7717 /* ShinpuruNodeDataTypes.swift */,
+				C48FCEDE211D795E000D7717 /* SNNodeWidget.swift */,
+				C48FCEDF211D795E000D7717 /* SNView.swift */,
+			);
+			path = shinpuru;
+			sourceTree = "<group>";
+		};
+		C48FCEE0211D795E000D7717 /* demoProject */ = {
+			isa = PBXGroup;
+			children = (
+				C48FCEE1211D795E000D7717 /* InputOutputRenderers.swift */,
+				C48FCEE2211D795E000D7717 /* Model.swift */,
+				C48FCEE3211D795E000D7717 /* NodeVO.swift */,
+				C48FCEE4211D795E000D7717 /* ItemRenderers.swift */,
+				C48FCEE5211D795E000D7717 /* NodeType.swift */,
+				C48FCEE6211D795E000D7717 /* NodeValue.swift */,
+			);
+			path = demoProject;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C48FCEBB211D78B7000D7717 /* Nodality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C48FCECE211D78B9000D7717 /* Build configuration list for PBXNativeTarget "Nodality" */;
+			buildPhases = (
+				748A75B775C4314BB71C840F /* [CP] Check Pods Manifest.lock */,
+				C48FCEB8211D78B7000D7717 /* Sources */,
+				C48FCEB9211D78B7000D7717 /* Frameworks */,
+				C48FCEBA211D78B7000D7717 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nodality;
+			productName = Nodality;
+			productReference = C48FCEBC211D78B7000D7717 /* Nodality.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C48FCEB4211D78B7000D7717 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = AudioKit;
+				TargetAttributes = {
+					C48FCEBB211D78B7000D7717 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = C48FCEB7211D78B7000D7717 /* Build configuration list for PBXProject "Nodality" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C48FCEB3211D78B7000D7717;
+			productRefGroup = C48FCEBD211D78B7000D7717 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C48FCEBB211D78B7000D7717 /* Nodality */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C48FCEBA211D78B7000D7717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48FCEED211D795E000D7717 /* guitarloop.wav in Resources */,
+				C48FCEEC211D795E000D7717 /* drumloop.wav in Resources */,
+				C48FCECA211D78B9000D7717 /* LaunchScreen.storyboard in Resources */,
+				C48FCEC7211D78B9000D7717 /* Assets.xcassets in Resources */,
+				C48FCEEA211D795E000D7717 /* leadloop.wav in Resources */,
+				C48FCEC5211D78B7000D7717 /* Main.storyboard in Resources */,
+				C48FCEE9211D795E000D7717 /* mixloop.wav in Resources */,
+				C48FCEEB211D795E000D7717 /* bassloop.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		748A75B775C4314BB71C840F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nodality-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C48FCEB8211D78B7000D7717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48FCEF1211D795E000D7717 /* SNNodeWidget.swift in Sources */,
+				C48FCEF7211D795E000D7717 /* NodeType.swift in Sources */,
+				C48FCEEF211D795E000D7717 /* SNRelationshipCurvesLayer.swift in Sources */,
+				C48FCEEE211D795E000D7717 /* SNNodesContainer.swift in Sources */,
+				C48FCEF2211D795E000D7717 /* SNView.swift in Sources */,
+				C48FCEF8211D795E000D7717 /* NodeValue.swift in Sources */,
+				C48FCEE8211D795E000D7717 /* SliderWidget.swift in Sources */,
+				C48FCEC2211D78B7000D7717 /* ViewController.swift in Sources */,
+				C48FCEF0211D795E000D7717 /* ShinpuruNodeDataTypes.swift in Sources */,
+				C48FCEC0211D78B7000D7717 /* AppDelegate.swift in Sources */,
+				C48FCEF4211D795E000D7717 /* Model.swift in Sources */,
+				C48FCEF3211D795E000D7717 /* InputOutputRenderers.swift in Sources */,
+				C48FCEF5211D795E000D7717 /* NodeVO.swift in Sources */,
+				C48FCEE7211D795E000D7717 /* NodeSelectorModal.swift in Sources */,
+				C48FCEF6211D795E000D7717 /* ItemRenderers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C48FCEC3211D78B7000D7717 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C48FCEC4211D78B7000D7717 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C48FCEC8211D78B9000D7717 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C48FCEC9211D78B9000D7717 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C48FCECC211D78B9000D7717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C48FCECD211D78B9000D7717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C48FCECF211D78B9000D7717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B17782487508EDCF17F630 /* Pods-Nodality.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9W69ZP8S5F;
+				INFOPLIST_FILE = Nodality/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.audiokit.Nodality;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C48FCED0211D78B9000D7717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAD49F1279D71D7037201064 /* Pods-Nodality.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9W69ZP8S5F;
+				INFOPLIST_FILE = Nodality/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.audiokit.Nodality;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C48FCEB7211D78B7000D7717 /* Build configuration list for PBXProject "Nodality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C48FCECC211D78B9000D7717 /* Debug */,
+				C48FCECD211D78B9000D7717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C48FCECE211D78B9000D7717 /* Build configuration list for PBXNativeTarget "Nodality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C48FCECF211D78B9000D7717 /* Debug */,
+				C48FCED0211D78B9000D7717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C48FCEB4211D78B7000D7717 /* Project object */;
+}
