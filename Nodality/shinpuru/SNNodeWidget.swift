@@ -194,7 +194,7 @@ class SNNodeWidget: UIView
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
-        self.superview?.bringSubview(toFront: self)
+        self.superview?.bringSubviewToFront(self)
         
         view.nodeTouched = true
         
@@ -224,11 +224,11 @@ class SNNodeWidget: UIView
     
     @objc func longPressHandler(recognizer: UILongPressGestureRecognizer)
     {
-        if recognizer.state == UIGestureRecognizerState.began
+        if recognizer.state == UIGestureRecognizer.State.began
         {
             view.relationshipCreationMode = true
         }
-        else if recognizer.state == UIGestureRecognizerState.cancelled || recognizer.state == UIGestureRecognizerState.ended
+        else if recognizer.state == UIGestureRecognizer.State.cancelled || recognizer.state == UIGestureRecognizer.State.ended
         {
             view.nodeTouched = false
         }
@@ -236,15 +236,15 @@ class SNNodeWidget: UIView
     
     @objc func panHandler(recognizer: UIPanGestureRecognizer)
     {
-        if recognizer.state == UIGestureRecognizerState.began
+        if recognizer.state == UIGestureRecognizer.State.began
         {
             previousPanPoint = recognizer.location(in: self.superview)
             
-            self.superview?.bringSubview(toFront: self)
+            self.superview?.bringSubviewToFront(self)
             
             view.selectedNode = node
         }
-        else if let previousPanPoint = previousPanPoint, recognizer.state == UIGestureRecognizerState.changed
+        else if let previousPanPoint = previousPanPoint, recognizer.state == UIGestureRecognizer.State.changed
         {
             let gestureLocation = recognizer.location(in: self.superview)
             
@@ -262,7 +262,7 @@ class SNNodeWidget: UIView
             
             view.nodeMoved(node: node)
         }
-        else if recognizer.state == UIGestureRecognizerState.cancelled || recognizer.state == UIGestureRecognizerState.ended
+        else if recognizer.state == UIGestureRecognizer.State.cancelled || recognizer.state == UIGestureRecognizer.State.ended
         {
             view.nodeTouched = false
         }
@@ -289,12 +289,12 @@ class SNWidgetTitleBar: UIToolbar
     required init(parentNodeWidget: SNNodeWidget)
     {
         self.parentNodeWidget = parentNodeWidget
-        label = UIBarButtonItem(title: title, style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        label = UIBarButtonItem(title: title, style: UIBarButtonItem.Style.plain, target: nil, action: nil)
 
         super.init(frame: CGRect.zero)
 
-        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-        let trash = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.trash, target: self, action: #selector(SNNodeWidget.deleteHandler))
+        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let trash = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.trash, target: self, action: #selector(SNNodeWidget.deleteHandler))
         
         items = parentNodeWidget.node.deletable() ? [label, spacer, trash] : [label]
         

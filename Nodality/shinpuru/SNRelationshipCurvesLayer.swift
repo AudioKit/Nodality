@@ -60,7 +60,9 @@ class SNRelationshipCurvesLayer: CALayer
         {
             sourceNodeTargets = nodes.filter
             {
-                $0.inputs != nil && $0.inputs!.contains({ $0 == focussedNode! })
+                //$0.inputs != nil && $0.inputs!.contains({ $0 == focussedNode! })
+                $0.inputs != nil && $0.inputs!.contains(focussedNode!)
+
             }
         }
         else
@@ -146,7 +148,7 @@ class SNRelationshipCurvesLayer: CALayer
             layer.strokeColor = UIColor.white.cgColor
             layer.lineWidth = 4
             layer.fillColor = nil
-            layer.lineCap = kCALineCapSquare
+            layer.lineCap = CAShapeLayerLineCap.square
             
             layer.shadowColor = UIColor.black.cgColor
             layer.shadowOffset = CGSize.zero

@@ -10,5 +10,5 @@ target 'Nodality' do
   use_frameworks!
 
   # Pods for Nodality
-  pod 'AudioKit'
+  pod 'AudioKit', '=4.4.0.b1'
 end

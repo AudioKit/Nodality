@@ -45,9 +45,9 @@ class NodalityModel
         frequency.maximumValue = 1000
         amplitude.value = NodeValue.Number(0.01)
         
-        toggleRelationship(sourceNode: frequency, targetNode: oscillator, targetIndex: 1)
-        toggleRelationship(sourceNode: amplitude, targetNode: oscillator, targetIndex: 0)
-        toggleRelationship(sourceNode: oscillator, targetNode: output, targetIndex: 0)
+        _ = toggleRelationship(sourceNode: frequency, targetNode: oscillator, targetIndex: 1)
+        _ = toggleRelationship(sourceNode: amplitude, targetNode: oscillator, targetIndex: 0)
+        _ = toggleRelationship(sourceNode: oscillator, targetNode: output, targetIndex: 0)
         
         nodes = [frequency, amplitude, oscillator, output]
 
@@ -87,15 +87,16 @@ class NodalityModel
     {
         var updatedNodes = [NodeVO]()
         
-        for node in nodes where node.inputs != nil && node.inputs!.contains({$0 == deletedNode})
+        //for node in nodes where node.inputs != nil && node.inputs!.contains({$0 == deletedNode})
+        for node in nodes where node.inputs != nil && node.inputs!.contains(deletedNode)
         {
-            for (idx, inputNode) in node.inputs!.enumerate() where inputNode == deletedNode
+            for (idx, inputNode) in node.inputs!.enumerated() where inputNode == deletedNode
             {
                 node.inputs?[idx] = nil
                 
                 node.recalculate()
                 
-                updatedNodes.appendContentsOf(updateDescendantNodes(node))
+                updatedNodes += updateDescendantNodes(sourceNode: node)
             }
         }
         
@@ -125,7 +126,8 @@ class NodalityModel
         for targetNode in nodes where targetNode != sourceNode
         {
             if let inputs = targetNode.inputs,
-                let targetNode = targetNode.nodalityNode, inputs.contains({$0 == sourceNode}) || targetNode == forceNode
+                //let targetNode = targetNode.nodalityNode, inputs.contains({$0 == sourceNode}) || targetNode == forceNode
+                let targetNode = targetNode.nodalityNode, inputs.contains(sourceNode) || targetNode == forceNode
             {
                 targetNode.recalculate()
                 
