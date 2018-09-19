@@ -294,7 +294,7 @@ class SNWidgetTitleBar: UIToolbar
         super.init(frame: CGRect.zero)
 
         let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
-        let trash = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.trash, target: self, action: #selector(SNNodeWidget.deleteHandler))
+        let trash = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.trash, target: self, action: #selector(SNWidgetTitleBar.deleteHandler))
         
         items = parentNodeWidget.node.deletable() ? [label, spacer, trash] : [label]
         
@@ -302,7 +302,7 @@ class SNWidgetTitleBar: UIToolbar
         barTintColor = UIColor.darkGray
     }
 
-    func deleteHandler()
+    @objc func deleteHandler()
     {
         parentNodeWidget.deleteHandler()
     }
