@@ -48,7 +48,7 @@ class SliderWidget: UIControl, NodalitySlider
             maximumValueSegmentedControl.selectedSegmentIndex = Int(ceil(log10(maximumValue)))
             
             slider.maximumValue = Float(maximumValue)
-            maxButton.setTitle(" \(maximumValue) ", for: UIControlState.normal)
+            maxButton.setTitle(" \(maximumValue) ", for: UIControl.State.normal)
   
             if let numberValue = value?.numberValue, numberValue > maximumValue
             {
@@ -76,11 +76,11 @@ class SliderWidget: UIControl, NodalitySlider
         
         label.textColor = UIColor.white
         
-        minButton.setTitle("0", for: UIControlState.normal)
+        minButton.setTitle("0", for: UIControl.State.normal)
         minButton.layer.borderColor = UIColor.lightGray.cgColor
         minButton.layer.borderWidth = 1
 
-        maxButton.setTitle(" \(maximumValue) ", for: UIControlState.normal)
+        maxButton.setTitle(" \(maximumValue) ", for: UIControl.State.normal)
         maxButton.layer.borderColor = UIColor.lightGray.cgColor
         maxButton.layer.borderWidth = 1
         

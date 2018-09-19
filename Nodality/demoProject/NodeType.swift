@@ -216,15 +216,21 @@ enum NodeType: String
         return inputSlots.count
     }
     
-    static let types = [
-        Numeric, NumericDouble, NumericHalve,
-        Oscillator, WhiteNoise, PinkNoise,
-        MoogLadder, DryWetMixer, StringResonator,
-        FMOscillator, SawtoothOscillator, SquareWaveOscillator, TriangleOscillator,
-        BitCrusher, Reverb, CostelloReverb, Decimator,
-        Equalizer, AutoWah, RingModulator, VariableDelay, LowPassFilter, HighPassFilter,
-        AudioPlayer, TB303
-    ].sort{$1.rawValue > $0.rawValue}
+    static var types: [NodeType] {
+        get {
+            var nodeTypes = [
+                Numeric, NumericDouble, NumericHalve,
+                Oscillator, WhiteNoise, PinkNoise,
+                MoogLadder, DryWetMixer, StringResonator,
+                FMOscillator, SawtoothOscillator, SquareWaveOscillator, TriangleOscillator,
+                BitCrusher, Reverb, CostelloReverb, Decimator,
+                Equalizer, AutoWah, RingModulator, VariableDelay, LowPassFilter, HighPassFilter,
+                AudioPlayer, TB303
+            ]
+            nodeTypes.sort{$1.rawValue > $0.rawValue}
+            return nodeTypes
+        }
+    }
     
     static func createNodeOfType(nodeType: NodeType, model: NodalityModel) -> NodeVO
     {

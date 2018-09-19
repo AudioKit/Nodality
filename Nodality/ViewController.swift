@@ -81,11 +81,18 @@ class ViewController: UIViewController
     {
         super.viewDidLayoutSubviews()
 
+        var topSpace: CGFloat
+        if #available(iOS 11.0, *) {
+            topSpace = view.safeAreaInsets.top
+        } else {
+            topSpace = self.topLayoutGuide.length
+        }
+        
         shinpuruNodeUI.frame = CGRect(
             x: 0,
-            y: topLayoutGuide.length,
+            y: topSpace,
             width: view.frame.width,
-            height: view.frame.height - topLayoutGuide.length)
+            height: view.frame.height - topSpace)
 
         slider.frame = CGRect(
             x: 0,

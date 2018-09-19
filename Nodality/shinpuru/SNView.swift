@@ -132,7 +132,7 @@ class SNView: UIScrollView, UIScrollViewDelegate
     
     @objc func longPressHandler(recognizer: UILongPressGestureRecognizer)
     {
-        if let nodeDelegate = nodeDelegate, recognizer.state == UIGestureRecognizerState.began
+        if let nodeDelegate = nodeDelegate, recognizer.state == UIGestureRecognizer.State.began
         {
             let newPodePosition = CGPoint(
                 x: recognizer.location(in: nodesContainer).x - nodeDelegate.defaultNodeSize(view: self).width / 2,
@@ -221,7 +221,7 @@ class SNView: UIScrollView, UIScrollViewDelegate
         
         for node in nodes
         {
-            createWidgetForNode(node: node)
+            _ = createWidgetForNode(node: node)
         }
         
         renderRelationships()
@@ -241,7 +241,7 @@ class SNView: UIScrollView, UIScrollViewDelegate
             
             nodesContainer.addSubview(widget)
             
-            nodesContainer.bringSubview(toFront: widget)
+            nodesContainer.bringSubviewToFront(widget)
             
             return widget
         }
